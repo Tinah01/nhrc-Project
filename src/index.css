@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+
+:root {
+    --primary: #008751;
+}
+
+.active {
+    @apply bg-[var(--primary)] text-white rounded-xl
+}
+
+.link{
+    @apply p-3 w-full text-[15px] flex items-center space-x-2 hover:bg-[var(--primary)] hover:text-white rounded-xl
+}
+
+button{
+    @apply h-[45px] w-fit px-6 p-2 flex items-center justify-center text-center rounded-xl transition-all duration-300 cursor-pointer gap-3 text-[15px]
+}
+
+.btn__pri{
+    @apply bg-[var(--primary)] text-white hover:bg-black transition-all duration-300
+}
+
+.btn__sec {
+   @apply border border-gray-100 bg-white hover:bg-gray-800 hover:text-white  transition-all duration-300
+}
+.input{
+    @apply h-[50px] focus:outline-none focus:ring-2 focus:ring-[var(--primary)] border w-full p-2 pl-3 rounded-lg border-gray-300
+}
+
+.authBg{
+    background-image: url('./assets/images/HR-Defenders.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+:disabled{
+    @apply bg-gray-400 hover:bg-gray-400
+}
+.p-paginator-pages{
+    display: flex;
+}
