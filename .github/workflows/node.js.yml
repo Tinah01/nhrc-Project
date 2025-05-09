@@ -75,6 +75,7 @@ jobs:
             sudo systemctl restart nginx
           else
             echo "nginx config already exists, skipping..."
+            fi
           
           if ! command -v pm2 
           then
@@ -87,6 +88,7 @@ jobs:
             else
               echo "pm2 process already exists, skipping..."
               pm2 restart frontend
+              fi
           else
             if ! pm2 list | grep -q "frontend"
             then
