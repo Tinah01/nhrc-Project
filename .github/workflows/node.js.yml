@@ -80,7 +80,7 @@ jobs:
           if ! command -v pm2 
           then
             echo "pm2 could not be found, installing..."
-            npm install pm2 -g
+            sudo npm install pm2 -g
             if ! pm2 list | grep -q "frontend"
             then
               echo "pm2 process not found, starting..."
